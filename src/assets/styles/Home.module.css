@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  background-color: #280137;
 }
 
 .main {
@@ -10,6 +11,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.count {
+  color: white;
+  font-size: 50px;
+  animation-duration: 2s;
+  animation-name: upanddown;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+.count_button {
+  border: 3px solid #684d73;
+  background-color: white;
+  width: 50px;
+  height: 40px;
+  margin: 10px;
+  font-size: 30px;
+}
+
+@keyframes upanddown {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-70px);
+  }
 }
 
 .footer {
